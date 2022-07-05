@@ -1,0 +1,3 @@
+Sitemap:https://seo-poc-32dd0.web.app/sitemap.xml
+User-agent: *
+allow:/
