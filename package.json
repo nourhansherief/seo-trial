@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "scully": "npx scully --",
-    "scully:serve": "npx scully serve --"
+    "scully:serve": "npx scully serve --",
+    "heroku-postbuild": "ng build --prod  && cp ./.htaccess ./dist/project-name/.htaccess"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +28,8 @@
     "@scullyio/scully": "^2.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.3.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.0",
@@ -42,5 +44,9 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
+  },
+  "engines":{
+    "node": "14.17.1",
+    "npm": "6.14.13"
   }
 }
