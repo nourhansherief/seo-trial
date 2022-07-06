@@ -1,6 +1,4 @@
-<IfModule mod_rewrite.c>
 RewriteEngine On
 # Replace the PUT-YOUR-RENDERTRON-URL-HERE with the URL of your Rendertron instance
 # Replace YOUR-WEBAPP-ROOT-URL with the base URL of your web application (e.g. example.com)
 RewriteRule ^(.*)$ https://render-tron.appspot.com/render/https://seo-trial.herokuapp.com/$1 [R=301,L]
-</IfModule>
