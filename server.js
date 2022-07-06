@@ -2,8 +2,9 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const myBotList = rendertron.botUserAgents.concat(['googlebot', 'yolobot']);
 const rendertron = require('rendertron-middleware');
+const myBotList = rendertron.botUserAgents.concat(['googlebot', 'yolobot']);
+
 
 app.use(
   rendertron.makeMiddleware({
