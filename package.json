@@ -9,7 +9,7 @@
     "test": "ng test",
     "scully": "npx scully --",
     "scully:serve": "npx scully serve --",
-    "heroku-postbuild": "ng build --prod  && cp ./.htaccess ./dist/project-name/.htaccess"
+    "heroku-postbuild": "ng build --prod  && cp ./src/.htaccess ./dist/project-name/.htaccess"
   },
   "private": true,
   "dependencies": {
